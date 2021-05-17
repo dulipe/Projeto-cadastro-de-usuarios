@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 2px solid black;
+}
+
+fieldset.contato {
+    display: flex;
+    padding: 10px 10px;
+}
+
+fieldset div label {
+    margin-left: 10px;
+}
+
+fieldset div input {
+    width: 200px;
+}
+
+fieldset.endereço {
+    display: flex;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+div.p1 {
+    display: flex;
+    flex-direction: column;
+}
+
+div label {
+    margin-top: 15px;
+}
+
+div.p2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+button {
+    padding: 5px 10PX;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+
+
