@@ -1,9 +1,18 @@
-function comp() {
-    const complemento = document.getElementsByName('comp')
+// configurando o checkbox comlemento!
 
-    if (complemento.checked) {
-        alert('ok')
+const comp = document.getElementById('comp')
+const input = document.getElementById('complemento')
+
+function complemento() {
+    if(comp.checked == true) {
+               
+        input.removeAttribute('hidden')
+        input.setAttribute('required', 'required')
+        
     } else {
-        alert('nao')
+        input.removeAttribute('required') 
+        input.setAttribute('hidden', 'hidden')
     }
 }
+
+comp.addEventListener('change' , complemento)
