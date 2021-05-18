@@ -3,14 +3,31 @@
     padding: 0;
 }
 
+body {
+    background-color: rgba(96, 32, 122, 0.226);
+    color: rgb(37, 37, 56);
+}
+
 h1{
     font-size: 40px;
 }
 
-header {
+#title {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
+
+}
+
+#menu {
+    font-size: 20px;
+    background-color: rgb(13, 13, 102);
+    width: 100vw;
+}
+
+div a {
+    text-decoration: none;
+    color: lightsteelblue;
 }
 
 legend {
@@ -71,8 +88,39 @@ button {
     padding: 5px 10PX;
     margin-top: 50px;
     border-radius: 5px;
+    color: rgb(37, 37, 56);
 }
 
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+/* Media Query */
+
+@media screen and (max-width:700px){
+    h1 {
+        font-size: 20px;
+    }
+
+    fieldset.contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset.endereço {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu {
+        font-size: 15px;
+    }
+
+}
 
 
 
