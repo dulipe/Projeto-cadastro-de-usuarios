@@ -29,3 +29,28 @@ div a {
     text-decoration: none;
     color: lightsteelblue;
 }
+
+/*Estilo da tabela*/
+
+table {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid rgb(5, 4, 4);
+    border-collapse: collapse;
+  }
+
+  th, td {
+      padding: 4px 16px;
+  }
+
+  .hscroll {
+      overflow-x: auto;
+  }
+
+  button {
+      background-color: lightskyblue;
+  }
