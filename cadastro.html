@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div id="menu"><a href="lista.html"><strong>Usuários cadastrados</strong></a></div>
+        <div id="menu">Atualmente temos 0 usuarios cadastrados</div>
         <h1 id="title">CADASTRO DE USUÁRIO</h1>
     </header>
     
@@ -19,42 +19,65 @@
                     <legend><strong>Contato</strong></legend>
                     <div>
                         <label for="nome-completo"><strong>Nome Completo:</strong></label>
-                        <input type="text" name="nome-completo" placeholder="Nome Completo" id="nome-completo" >
+                        <input type="text" name="nome-completo" placeholder="Nome Completo" id="nome-completo"required>
                     </div>
                     <div>
                         <label for="email"><strong>Email:</strong></label>
-                        <input type="email" name="email" placeholder="Email" id="email" >
+                        <input type="email" name="email" placeholder="Email" id="email" required>
                     </div>
                     <div>
                         <label for="tel"><strong>Telefone:</strong></label>
-                        <input type="number" name="tel" placeholder="Telefone" id="tel" >
+                        <input type="number" name="tel" placeholder="Telefone" id="tel" required>
                     </div>
                 </fieldset>
                 <fieldset class="endereço">
                     <legend><strong>Endereço</strong></legend>
                     <div class="p1">
                         <label for="cep"><strong>Cep:</strong></label>
-                        <input type="number" name="cep" placeholder="Cep" id="cep" >
+                        <input type="number" name="cep" placeholder="Cep" id="cep" required >
                         <label for="rua"><strong>Rua:</strong></label>
-                        <input type="text" name="rua" placeholder="Rua" id="rua" >
+                        <input type="text" name="rua" placeholder="Rua" id="rua" required >
                         <label for="numero"><strong>Numero:</strong></label>
-                        <input type="number" name="numero" placeholder="numero" id="numero" >
+                        <input type="number" name="numero" placeholder="numero" id="numero" required >
                         <label for="complemento"><strong>Complemento:</strong><input type="checkbox" name="comp" id="comp"></label>                      
                         <input type="text" placeholder="complemento" name="complemento" id="complemento" hidden>
                     </div>
                     <div class="p2">
                         <label for="bairro"><strong>Bairro:</strong></label>
-                        <input type="text" name="bairro" placeholder="Bairro" id="bairro" >
+                        <input type="text" name="bairro" placeholder="Bairro" id="bairro" required >
                         <label for="cidade"><strong>Cidade:</strong></label>
-                        <input type="text" name="cidade" placeholder="Cidade" id="cidade" >
+                        <input type="text" name="cidade" placeholder="Cidade" id="cidade" required >
                         <label for="estado"><strong>Estado:</strong></label>
-                        <input type="text" name="estado" placeholder="Estado" id="estado" >
+                        <input type="text" name="estado" placeholder="Estado" id="estado" required >
                     </div>
                 </fieldset>
-                <button><strong>CADASTRAR</strong></button>      
+                <button id="btn" type="button" onclick="cadastrarUsuarios()"><strong>CADASTRAR</strong></button>      
         </form>
 
-        <footer></footer>
+        <div class="hscroll">
+            <h2>TABELA DE USUARIOS CADASTRADOS</h2>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Nome completo</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Cep</th>
+                        <th>Rua</th>
+                        <th>Número da casa</th>
+                        <th>Comp.</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Data de cadastro</th>
+                        <th>...</th>
+                    </tr>
+                </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        
     </main>
 
     <script src="script.js"></script>

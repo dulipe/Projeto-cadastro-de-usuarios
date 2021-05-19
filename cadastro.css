@@ -12,17 +12,22 @@ h1{
     font-size: 40px;
 }
 
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
 #title {
     display: flex;
     justify-content: center;
     margin: 20px;
-
 }
 
 #menu {
     font-size: 20px;
     background-color: rgb(13, 13, 102);
     width: 100vw;
+    color: blanchedalmond;
 }
 
 div a {
@@ -89,6 +94,7 @@ button {
     margin-top: 50px;
     border-radius: 5px;
     color: rgb(37, 37, 56);
+    margin-bottom: 50px;
 }
 
 button:hover {
@@ -96,6 +102,38 @@ button:hover {
     background-color: black;
 }
 
+
+/*Estilos da tabela*/
+
+table {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid rgb(5, 4, 4);
+    border-collapse: collapse;
+  }
+
+  th, td {
+      padding: 4px 16px;
+  }
+
+  .hscroll {
+      overflow-x: auto;
+  }
+
+  button#del {
+      margin: 2px;
+      border-radius: 5px;
+      color: rgb(37, 37, 56);
+  }
+
+  button#del:hover{
+    color: white;
+    background-color: black;
+  }
 
 
 
